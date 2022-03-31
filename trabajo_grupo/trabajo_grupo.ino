@@ -1,9 +1,11 @@
 const int ledPIN = 8;
+const int sensorherradura = 7;
  
 void setup() {
   //declarar variables y puerto serial
   Serial.begin(9600);    //iniciar puerto serie
   pinMode(ledPIN , OUTPUT);  //definir pin como salida
+  pinMode(sensorherradura, INPUT);
 }
  
 void loop(){
