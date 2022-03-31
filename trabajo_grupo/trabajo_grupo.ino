@@ -1,5 +1,7 @@
 const int ledPIN = 8;
 const int sensorherradura = 7;
+int vector[50];
+int i = 0;
  
 void setup() {
   //declarar variables y puerto serial
@@ -9,7 +11,8 @@ void setup() {
 }
  
 void loop(){
-
+ //llenar base de datos
+  vector[i] = digitalRead(sensorherradura);
  //sensado
   digitalWrite(ledPIN , HIGH);   // poner el Pin en HIGH
   delay(1000);                   // esperar un segundo
