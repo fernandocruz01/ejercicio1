@@ -19,8 +19,15 @@ void loop(){
   delay(1000); 
   
   // actuador
-
-
+  int infrarojo=0;
+  if( infrarojo ==1){
+    digitalWrite(ledPIN , HIGH);   // poner el Pin en HIGH
+  }
+   else{
+     digitalWrite(ledPIN , LOW);
+   }
+  
+  
   //consola
   i++;
 }
